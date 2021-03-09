@@ -16,8 +16,8 @@ const Post = (props) => {
             <p>Id : {id}</p>
             <p> Title : {title}</p>
             <p> Body : {body}</p>
-            <button onClick={() => show(id)}> Show Details 1 </button>
-            <button as={Link} to={`/post/${id}`} onClick={() => history.push(`/posts/${id}`)} >Post Details 2 link as</button>
+            <button onClick={() => show(id)}> Show Details{id} </button>
+            <button as={Link} to={`/post/${id}`} onClick={() => history.push(`/posts/${id}`)} >Post Details {id} link as</button>
         </div >
     );
 };
